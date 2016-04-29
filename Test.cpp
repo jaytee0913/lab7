@@ -332,11 +332,11 @@ bool Test::test13()
 	list.addFront(5);
 	vector<int> temp = list.toVector();
 	vector<int> test;
-	check.push_back(5);
-	check.push_back(4);
-	check.push_back(3);
-	check.push_back(2);
-	check.push_back(1);
+	test.push_back(5);
+	test.push_back(4);
+	test.push_back(3);
+	test.push_back(2);
+	test.push_back(1);
 
 	if(temp == test)
 	{
@@ -374,11 +374,11 @@ bool Test::test14()
 	list.addBack(5);
 	vector<int> temp = list.toVector();
 	vector<int> test;
-	check.push_back(1);
-	check.push_back(2);
-	check.push_back{3);
-	check.push_back(4);
-	check.push_back(5);
+	test.push_back(1);
+	test.push_back(2);
+	test.push_back(3);
+	test.push_back(4);
+	test.push_back(5);
 
 	if(temp == test)
 	{
