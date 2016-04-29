@@ -406,5 +406,84 @@ bool Test::test14()
 
 bool Test::test15()
 {
+	LinkedList<int> list;
 
+	cout << "Test 15: check if multiple removeBacks on populated list returns same vector: ";
+	list.addFront(1);
+	list.addFront(2);
+	list.addFront(3);
+	list.addFront(4);
+	list.addFront(5);
+	list.removeBack();
+	list.removeBack();
+	vector<int> temp = list.toVector();
+	vector<int> test;
+	test.push_back(5);
+	test.push_back(4);
+	test.push_back(3);
+
+	if(temp == test)
+	{
+		cout << "PASS" << endl;
+	}
+	else
+	{
+		cout << "FAIL" << endl;
+		cout << "addFront vector: ";
+		for(int i = 0; i < temp.size(); i++)
+		{
+			cout << temp[i] << " ";
+		}
+		cout << "\n";
+		cout << "correct vector: ";
+		for(int i = 0; i < test.size(); i++)
+		{
+			cout << test[i] << " ";
+		}
+		cout << "\n";
+	}
+
+	return (temp == test);
+}
+
+bool Test::test16()
+{
+	LinkedList<int> list;
+
+	cout << "Test 15: check if multiple removeBacks on populated list returns same vector: ";
+	list.addFront(1);
+	list.addFront(2);
+	list.addFront(3);
+	list.addFront(4);
+	list.addFront(5);
+	list.removeFront();
+	list.removeFront();
+	vector<int> temp = list.toVector();
+	vector<int> test;
+	test.push_back(3);
+	test.push_back(2);
+	test.push_back(1);
+
+	if(temp == test)
+	{
+		cout << "PASS" << endl;
+	}
+	else
+	{
+		cout << "FAIL" << endl;
+		cout << "addFront vector: ";
+		for(int i = 0; i < temp.size(); i++)
+		{
+			cout << temp[i] << " ";
+		}
+		cout << "\n";
+		cout << "correct vector: ";
+		for(int i = 0; i < test.size(); i++)
+		{
+			cout << test[i] << " ";
+		}
+		cout << "\n";
+	}
+
+	return (temp == test);
 }
