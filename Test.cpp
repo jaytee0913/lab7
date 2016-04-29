@@ -16,9 +16,9 @@ void Test::runTests()
 	test5();
 	test6();
 	test7();
-	//test8();
-	//test9();
-	//test10();
+	test8();
+	test9();
+	test10();
 }
 
 bool Test::test1()
@@ -133,7 +133,7 @@ bool Test::test6()
 {
 	LinkedList<int> list;
 	bool flag;
-	int testSize;
+	int testSize = 0;
 
 	cout << "Test 6: size is correct after adds and removeFront: ";
 
@@ -174,9 +174,9 @@ bool Test::test7()
 {
 	LinkedList<int> list;
 	bool flag;
-	int testSize;
+	int testSize = 0;
 
-	cout << "Test 6: size is correct after adds and removeBack: ";
+	cout << "Test 7: size is correct after adds and removeBack: ";
 
 	for(int i = 0; i < 19; i++)
 	{
