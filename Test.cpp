@@ -23,6 +23,8 @@ void Test::runTests()
 	test12();
 	test13();
 	test14();
+	test15();
+	test16();
 }
 
 bool Test::test1()
