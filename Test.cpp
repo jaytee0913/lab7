@@ -16,9 +16,9 @@ void Test::runTests()
 	test5();
 	test6();
 	test7();
-	test8();
-	test9();
-	test10();
+	//test8();
+	//test9();
+	//test10();
 }
 
 bool Test::test1()
@@ -64,7 +64,7 @@ bool Test::test3()
 	bool flag = false;
 	LinkedList<int> list;
 
-	cout << "Test 3: correct size returned after multiple addFronts: "
+	cout << "Test 3: correct size returned after multiple addFronts: ";
 
 	for(int i = 0; i < 7; i++)
 	{
@@ -109,7 +109,7 @@ bool Test::test5()
 	bool flag = false;
 	LinkedList<int> list;
 
-	cout << "Test 5: correct size returned after multiple addBacks: "
+	cout << "Test 5: correct size returned after multiple addBacks: ";
 
 	for(int i = 0; i < 7; i++)
 	{
