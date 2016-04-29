@@ -431,7 +431,7 @@ bool Test::test15()
 	else
 	{
 		cout << "FAIL" << endl;
-		cout << "addFront vector: ";
+		cout << "temp vector: ";
 		for(int i = 0; i < temp.size(); i++)
 		{
 			cout << temp[i] << " ";
@@ -452,7 +452,7 @@ bool Test::test16()
 {
 	LinkedList<int> list;
 
-	cout << "Test 15: check if multiple removeBacks on populated list returns same vector: ";
+	cout << "Test 16: check if multiple removeFronts on populated list returns same vector: ";
 	list.addFront(1);
 	list.addFront(2);
 	list.addFront(3);
@@ -473,7 +473,7 @@ bool Test::test16()
 	else
 	{
 		cout << "FAIL" << endl;
-		cout << "addFront vector: ";
+		cout << "temp vector: ";
 		for(int i = 0; i < temp.size(); i++)
 		{
 			cout << temp[i] << " ";

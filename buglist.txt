@@ -1,3 +1,4 @@
-1. size starts at 1
-2. search for a value in the list will not return true
-3. 
+1. m_size starts at 1
+2. m_size will always return 1 more than it should
+3. addBack will not add correct value. It will only add the first value over and over
+4. removeFront does not work properly. It will removeBack instead.

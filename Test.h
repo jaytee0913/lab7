@@ -21,12 +21,12 @@ public:
 	bool test8(); //search returns false on an empty list
 	bool test9(); //search returns false when the specified value is not in the list
 	bool test10(); //search returns true if value is in the list
-	bool test11();
-	bool test12();
-	bool test13();
-	bool test14();
-	bool test15();
-	bool test16();
+	bool test11(); //check if addFront adds correct value to the vector:
+	bool test12(); //check if addBack adds correct value to the vector:
+	bool test13(); //check if multiple addFronts adds correct values to the vector:
+	bool test14(); //check if multiple addBacks adds correct values to the vector:
+	bool test15(); //check if multiple removeBacks on populated list returns same vector:
+	bool test16(); //check if multiple removeFronts on populated list returns same vector:
 };
 
 #endif
