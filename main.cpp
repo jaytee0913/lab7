@@ -5,6 +5,6 @@
 
 int main()
 {
-	Test myTester();
+	Test myTester;
 	myTester.runTests();
 }
