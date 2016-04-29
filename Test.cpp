@@ -19,6 +19,10 @@ void Test::runTests()
 	test8();
 	test9();
 	test10();
+	test11();
+	test12();
+	test13();
+	test14();
 }
 
 bool Test::test1()
@@ -64,7 +68,7 @@ bool Test::test3()
 	bool flag = false;
 	LinkedList<int> list;
 
-	cout << "Test 3: correct size returned after multiple addFronts: "
+	cout << "Test 3: correct size returned after multiple addFronts: ";
 
 	for(int i = 0; i < 7; i++)
 	{
@@ -109,7 +113,7 @@ bool Test::test5()
 	bool flag = false;
 	LinkedList<int> list;
 
-	cout << "Test 5: correct size returned after multiple addBacks: "
+	cout << "Test 5: correct size returned after multiple addBacks: ";
 
 	for(int i = 0; i < 7; i++)
 	{
@@ -278,22 +282,126 @@ bool Test::test10()
 
 bool Test::test11()
 {
+	LinkedList<int> list;
 
+	cout << "Test 11: check if addFront adds correct value to the vector: ";
+	list.addFront(1);
+	vector<int> temp = list.toVector();
+	vector<int> test;
+	test.push_back(1);
+	if(temp == test)
+	{
+		cout << "PASS" << endl;
+	}
+	else
+	{
+		cout << "FAIL" << endl;
+	}
+	return (temp == test);
 }
 
 bool Test::test12()
 {
+	LinkedList<int> list;
 
+	cout << "Test 12: check if addBack adds correct value to the vector: ";
+	list.addBack(1);
+	vector<int> temp = list.toVector();
+	vector<int> test;
+	test.push_back(1);
+	if(temp == test)
+	{
+		cout << "PASS" << endl;
+	}
+	else
+	{
+		cout << "FAIL" << endl;
+	}
+	return (temp == test);
 }
 
 bool Test::test13()
 {
+	LinkedList<int> list;
 
+	cout << "Test 13: check if multiple addFronts adds correct values to the vector: ";
+	list.addFront(1);
+	list.addFront(2);
+	list.addFront(3);
+	list.addFront(4);
+	list.addFront(5);
+	vector<int> temp = list.toVector();
+	vector<int> test;
+	check.push_back(5);
+	check.push_back(4);
+	check.push_back(3);
+	check.push_back(2);
+	check.push_back(1);
+
+	if(temp == test)
+	{
+		cout << "PASS" << endl;
+	}
+	else
+	{
+		cout << "FAIL" << endl;
+		cout << "addFront vector: ";
+		for(int i = 0; i < temp.size(); i++)
+		{
+			cout << temp[i] << " ";
+		}
+		cout << "\n";
+		cout << "correct vector: ";
+		for(int i = 0; i < test.size(); i++)
+		{
+			cout << test[i] << " ";
+		}
+		cout << "\n";
+	}
+
+	return (temp == test);
 }
 
 bool Test::test14()
 {
+	LinkedList<int> list;
 
+	cout << "Test 14: check if multiple addBacks adds correct values to the vector: ";
+	list.addBack(1);
+	list.addBack(2);
+	list.addBack(3);
+	list.addBack(4);
+	list.addBack(5);
+	vector<int> temp = list.toVector();
+	vector<int> test;
+	check.push_back(1);
+	check.push_back(2);
+	check.push_back{3);
+	check.push_back(4);
+	check.push_back(5);
+
+	if(temp == test)
+	{
+		cout << "PASS" << endl;
+	}
+	else
+	{
+		cout << "FAIL" << endl;
+		cout << "addBack vector: ";
+		for(int i = 0; i < temp.size(); i++)
+		{
+			cout << temp[i] << " ";
+		}
+		cout << "\n";
+		cout << "correct vector: ";
+		for(int i = 0; i < test.size(); i++)
+		{
+			cout << test[i] << " ";
+		}
+		cout << "\n";
+	}
+
+	return (temp == test);
 }
 
 bool Test::test15()
